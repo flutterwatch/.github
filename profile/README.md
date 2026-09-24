@@ -14,14 +14,14 @@
   <a href="https://flutterwatch.dev"><b>Website</b></a> &nbsp;·&nbsp;
   <a href="https://github.com/flutterwatch/flutter-watchos/blob/main/doc/get-started.md">Get started</a> &nbsp;·&nbsp;
   <a href="https://github.com/flutterwatch/flutter-watchos/blob/main/doc/commands.md">Commands</a> &nbsp;·&nbsp;
-  <a href="https://pub.dev/packages/flutter_watchos">pub.dev</a> &nbsp;·&nbsp;
-  <a href="https://api.flutterwatch.dev/">Join the closed beta</a>
+  <a href="https://pub.dev/publishers/flutterwatch.dev/packages">Plugins on pub.dev</a> &nbsp;·&nbsp;
+  <a href="https://api.flutterwatch.dev/">Sign in</a>
 </p>
 
 <p align="center">
-  <img alt="Status: closed beta" src="https://img.shields.io/badge/status-closed%20beta-2BA3F2?style=flat-square" />
-  <img alt="Platform: macOS" src="https://img.shields.io/badge/host-macOS-3D4E74?style=flat-square" />
-  <img alt="Flutter 3.44.4" src="https://img.shields.io/badge/Flutter-3.44.4-1565C0?style=flat-square" />
+  <img alt="flutter-watchos 0.1.0" src="https://img.shields.io/badge/flutter--watchos-0.1.0-2BA3F2?style=flat-square" />
+  <img alt="Host: macOS (Apple Silicon)" src="https://img.shields.io/badge/host-macOS%20%28Apple%20Silicon%29-3D4E74?style=flat-square" />
+  <img alt="Flutter 3.47.4" src="https://img.shields.io/badge/Flutter-3.47.4-1565C0?style=flat-square" />
   <img alt="Target: watchOS" src="https://img.shields.io/badge/target-watchOS-14213A?style=flat-square" />
 </p>
 
@@ -30,9 +30,9 @@
 ### What is flutterwatch?
 
 flutterwatch brings the Flutter framework to **Apple Watch**. Write your app in
-Dart with the widgets and packages you already use, then build and run it on the
-watchOS Simulator or a paired Apple Watch — with hot reload and DevTools, exactly
-like Flutter for iOS or Android.
+Dart with the widgets and packages you already use, run it on the watchOS
+Simulator with hot reload or on a paired Apple Watch, inspect it with DevTools
+exactly like Flutter for iOS or Android, and ship it to the App Store.
 
 It is a standalone CLI that wraps an unmodified Flutter SDK and a pre-built
 watchOS engine, so there's no custom Flutter checkout to maintain. watchOS is a
@@ -43,8 +43,8 @@ cross-platform apps clean.
 
 - 🛠️ **A drop-in CLI** — the `flutter` commands you know (`create`, `run`, `build`, `doctor`), retargeted to watchOS.
 - ⚡ **Hot reload & DevTools** — the same inner loop, on the watchOS Simulator.
-- ⌚ **Real Apple Watch** — build and run on a paired watch in profile or release.
-- 🧩 **watchOS is its own platform** — first-class at build and runtime, so plugins and cross-platform apps stay clean.
+- ⌚ **Real Apple Watch** — run on a paired watch in profile or release, and build for the App Store.
+- 🧩 **Plugins, already ported** — storage, sensors, location, video, audio and Firebase, on pub.dev.
 
 ### Get started
 
@@ -53,25 +53,28 @@ cross-platform apps clean.
 git clone https://github.com/flutterwatch/flutter-watchos.git
 cd flutter-watchos && export PATH="$PATH:$PWD/bin"
 
-# 2. connect your account + fetch the engine
-flutter-watchos login
+# 2. fetch the engine
 flutter-watchos precache && flutter-watchos doctor
 
-# 3. build your first watch app
+# 3. build your first watch app, on the Simulator
 flutter-watchos create hello_watch
 cd hello_watch && flutter-watchos run
+
+# 4. a real watch and the App Store: sign in, get the rest
+flutter-watchos login && flutter-watchos precache
 ```
 
-Joining the closed beta is self-serve: sign in with GitHub at
-**[api.flutterwatch.dev](https://api.flutterwatch.dev/)** and you're in
-immediately. Beta accounts build and run in debug and profile modes.
+The Simulator needs no account. To run on a watch you own and to build for the
+App Store, sign in with GitHub — at **[api.flutterwatch.dev](https://api.flutterwatch.dev/)**
+or with `flutter-watchos login`. That is all an account takes.
 
 ### Repositories
 
 | Repository | What it is |
 | --- | --- |
 | [**flutter-watchos**](https://github.com/flutterwatch/flutter-watchos) | The CLI, templates, and documentation. |
-| [flutter_watchos](https://pub.dev/packages/flutter_watchos) | First-party plugin — platform detection, device info, haptics, and the Digital Crown ([on pub.dev](https://pub.dev/packages/flutter_watchos)). |
+| [plugins](https://github.com/flutterwatch/plugins) | watchOS implementations of popular Flutter plugins, published on pub.dev under [flutterwatch.dev](https://pub.dev/publishers/flutterwatch.dev/packages). |
+| [flutter_watchos](https://pub.dev/packages/flutter_watchos) | First-party package — platform detection, device info, haptics, and the Digital Crown. |
 
 <br/>
 
