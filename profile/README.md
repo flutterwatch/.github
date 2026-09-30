@@ -6,8 +6,8 @@
 
 <p align="center">
   <b>Build Flutter apps for Apple&nbsp;Watch.</b><br/>
-  A drop-in CLI companion to the Flutter SDK — same commands, same hot reload,
-  same DevTools — targeting <b>watchOS</b> instead of iOS.
+  A drop-in CLI companion to the Flutter SDK — the commands you know, hot reload
+  on the Simulator, and DevTools — targeting <b>watchOS</b> instead of iOS.
 </p>
 
 <p align="center">
@@ -42,7 +42,7 @@ cross-platform apps clean.
 ### Highlights
 
 - 🛠️ **A drop-in CLI** — the `flutter` commands you know (`create`, `run`, `build`, `doctor`), retargeted to watchOS.
-- ⚡ **Hot reload & DevTools** — the same inner loop, on the watchOS Simulator.
+- ⚡ **Hot reload & DevTools** — iterate and inspect your app on the watchOS Simulator.
 - ⌚ **Real Apple Watch** — run on a paired watch in profile or release, and build for the App Store.
 - 🧩 **Plugins, already ported** — storage, sensors, location, video, audio and Firebase, on pub.dev.
 
