@@ -31,8 +31,8 @@
 
 flutterwatch brings the Flutter framework to **Apple Watch**. Write your app in
 Dart with the widgets and packages you already use, run it on the watchOS
-Simulator with hot reload or on a paired Apple Watch, inspect it with DevTools
-exactly like Flutter for iOS or Android, and ship it to the App Store.
+Simulator with hot reload or on a paired Apple Watch, inspect it with DevTools,
+and ship it to the App Store.
 
 It is a standalone CLI that wraps an unmodified Flutter SDK and a pre-built
 watchOS engine, so there's no custom Flutter checkout to maintain. watchOS is a
@@ -48,19 +48,29 @@ cross-platform apps clean.
 
 ### Get started
 
+Install the toolchain and put it on your `PATH`:
+
 ```sh
-# 1. install the toolchain
 git clone https://github.com/flutterwatch/flutter-watchos.git
 cd flutter-watchos && export PATH="$PATH:$PWD/bin"
+```
 
-# 2. fetch the engine
+Fetch the engine and check your setup:
+
+```sh
 flutter-watchos precache && flutter-watchos doctor
+```
 
-# 3. build your first watch app, on the Simulator
+Build your first watch app and run it on the Simulator:
+
+```sh
 flutter-watchos create hello_watch
 cd hello_watch && flutter-watchos run
+```
 
-# 4. a real watch and the App Store: sign in, get the rest
+For a real watch and the App Store, sign in, then fetch the rest:
+
+```sh
 flutter-watchos login && flutter-watchos precache
 ```
 
