@@ -21,7 +21,7 @@
 <p align="center">
   <img alt="flutter-watchos 0.1.0" src="https://img.shields.io/badge/flutter--watchos-0.1.0-2BA3F2?style=flat-square" />
   <img alt="Host: macOS (Apple Silicon)" src="https://img.shields.io/badge/host-macOS%20%28Apple%20Silicon%29-3D4E74?style=flat-square" />
-  <img alt="Flutter 3.47.4" src="https://img.shields.io/badge/Flutter-3.47.4-1565C0?style=flat-square" />
+  <img alt="Flutter 3.47.5" src="https://img.shields.io/badge/Flutter-3.47.5-1565C0?style=flat-square" />
   <img alt="Target: watchOS" src="https://img.shields.io/badge/target-watchOS-14213A?style=flat-square" />
 </p>
 
