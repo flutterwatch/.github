@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img alt="flutter-watchos 0.1.0" src="https://img.shields.io/badge/flutter--watchos-0.1.0-2BA3F2?style=flat-square" />
+  <img alt="flutter-watchos 0.1.1" src="https://img.shields.io/badge/flutter--watchos-0.1.1-2BA3F2?style=flat-square" />
   <img alt="Host: macOS (Apple Silicon)" src="https://img.shields.io/badge/host-macOS%20%28Apple%20Silicon%29-3D4E74?style=flat-square" />
   <img alt="Flutter 3.47.5" src="https://img.shields.io/badge/Flutter-3.47.5-1565C0?style=flat-square" />
   <img alt="Target: watchOS" src="https://img.shields.io/badge/target-watchOS-14213A?style=flat-square" />
@@ -52,7 +52,7 @@ Install the toolchain and put it on your `PATH`:
 
 ```sh
 git clone https://github.com/flutterwatch/flutter-watchos.git
-cd flutter-watchos && export PATH="$PATH:$PWD/bin"
+cd flutter-watchos && export PATH="$PWD/bin:$PATH"
 ```
 
 Fetch the engine and check your setup:
