@@ -19,9 +19,11 @@
 </p>
 
 <p align="center">
-  <img alt="flutter-watchos 0.1.1" src="https://img.shields.io/badge/flutter--watchos-0.1.1-2BA3F2?style=flat-square" />
+  <!-- The two version badges read the newest plain release tag from the releases feed, so a
+       release needs no edit here. -->
+  <img alt="flutter-watchos, latest release" src="https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fgithub.com%2Fflutterwatch%2Fflutter-watchos%2Freleases.atom&amp;query=substring-after%28%2F%2F%2A%5Blocal-name%28%29%3D%27entry%27%5D%5Bcontains%28%2A%5Blocal-name%28%29%3D%27id%27%5D%2C%27-watchos.%27%29%20and%20not%28contains%28substring-after%28%2A%5Blocal-name%28%29%3D%27id%27%5D%2C%27-watchos.%27%29%2C%27-%27%29%29%5D%5B1%5D%2F%2A%5Blocal-name%28%29%3D%27id%27%5D%2C%27-watchos.%27%29&amp;label=flutter-watchos&amp;color=2BA3F2&amp;style=flat-square" />
   <img alt="Host: macOS (Apple Silicon)" src="https://img.shields.io/badge/host-macOS%20%28Apple%20Silicon%29-3D4E74?style=flat-square" />
-  <img alt="Flutter 3.47.5" src="https://img.shields.io/badge/Flutter-3.47.5-1565C0?style=flat-square" />
+  <img alt="Flutter version of the latest release" src="https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fgithub.com%2Fflutterwatch%2Fflutter-watchos%2Freleases.atom&amp;query=substring-before%28substring-after%28%2F%2F%2A%5Blocal-name%28%29%3D%27entry%27%5D%5Bcontains%28%2A%5Blocal-name%28%29%3D%27id%27%5D%2C%27-watchos.%27%29%20and%20not%28contains%28substring-after%28%2A%5Blocal-name%28%29%3D%27id%27%5D%2C%27-watchos.%27%29%2C%27-%27%29%29%5D%5B1%5D%2F%2A%5Blocal-name%28%29%3D%27id%27%5D%2C%27%2Fv%27%29%2C%27-watchos.%27%29&amp;label=Flutter&amp;color=1565C0&amp;style=flat-square" />
   <img alt="Target: watchOS" src="https://img.shields.io/badge/target-watchOS-14213A?style=flat-square" />
 </p>
 
